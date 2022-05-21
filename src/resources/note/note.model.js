@@ -2,39 +2,23 @@ import mongoose from "mongoose";
 
 const noteSchema = new mongoose.Schema(
   {
-    title: {
+    name: {
       type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-      required: true,
-    },
-    bgColor: {
-      type: String,
-      required: true,
-    },
-    isEdit: {
-      type: Boolean,
-      required: true,
-    },
-    isPinned: {
-      type: Boolean,
       required: true,
     },
     tag: {
       type: String,
       required: true,
     },
-    priority: {
+    duration: {
       type: Number,
       required: true,
     },
-    isArchived: {
-      type: Boolean,
+    description: {
+      type: String,
       required: true,
     },
-    isTemporarilyDeleted: {
+    isEdit: {
       type: Boolean,
       required: true,
     },
